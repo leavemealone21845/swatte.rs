@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://masochi.st/">
-    <style>
-        body {
-            background-color: #121212;
-            color: #383838;
-            font-size: small;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        a {
-            color: #aaaaaa;
-        }
-    </style>
-    <title>suicide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:description" content=":3">
-    <meta name="theme-color" data-react-helmet="true" content="#ffd4f4">
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const path = window.location.pathname;
+            const targetUrl = "https://masochi.st" + path;
+            
+            setTimeout(() => {
+                document.body.classList.add('show');
+            }, 1000);
+            
+            window.location.replace(targetUrl);
+        });
+    </script>
 </head>
 <body>
-    If you are not redirected automatically, follow this link @  <a href="https://masochi.st/">masochi.st</a>.
+    <p>If you are not redirected, <a id="redirect-link" href="#">click here</a>.</p>
+    <script>
+        const path = window.location.pathname;
+        document.getElementById("redirect-link").href = "https://masochi.st" + path;
+    </script>
 </body>
 </html>
